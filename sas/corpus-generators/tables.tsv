@@ -1,0 +1,196 @@
+fichier	famille	variante	parametre_varie	reference	compression	oracle	note
+base_n0_mix_no	base	n0_mix	nombre de lignes = 0	base_n100_mix_no	no	small	
+base_n1_mix_no	base	n1_mix	nombre de lignes = 1	base_n100_mix_no	no	small	
+base_n2_mix_no	base	n2_mix	nombre de lignes = 2	base_n100_mix_no	no	small	
+base_n100_mix_no	base	n100_mix	nombre de lignes = 100	(reference)	no	small	
+base_n3000_mix_no	base	n3000_mix	nombre de lignes = 3000	base_n100_mix_no	no	small	
+base_n100_num_no	base	n100_num	colonnes = 1 numerique	base_n100_mix_no	no	small	
+base_n100_chr_no	base	n100_chr	colonnes = 1 caractere	base_n100_mix_no	no	small	
+types_num3_no	types	num3	longueur numerique = 3	types_num8_no	no	small	
+types_num4_no	types	num4	longueur numerique = 4	types_num8_no	no	small	
+types_num5_no	types	num5	longueur numerique = 5	types_num8_no	no	small	
+types_num6_no	types	num6	longueur numerique = 6	types_num8_no	no	small	
+types_num7_no	types	num7	longueur numerique = 7	types_num8_no	no	small	
+types_num8_no	types	num8	longueur numerique = 8	(reference)	no	small	
+types_char1_no	types	char1	longueur caractere = 1	types_char8_no	no	small	
+types_char8_no	types	char8	longueur caractere = 8	(reference)	no	small	
+types_char200_no	types	char200	longueur caractere = 200	types_char8_no	no	small	
+types_char32767_no	types	char32767	longueur caractere = 32767	types_char8_no	no	small	
+valeurs_manquants_no	valeurs	manquants	valeurs manquantes (. ._ .A-.Z)	(sans reference : une valeur par ligne)	no	small	infinis et NaN : SAS ne sait pas en produire (aucune syntaxe), non generes
+valeurs_extremes_no	valeurs	extremes	valeurs extremes	(sans reference : une valeur par ligne)	no	small	
+valeurs_chaines_no	valeurs	chaines	contenus de chaine (vide, blancs, tabulation)	(sans reference : une valeur par ligne)	no	small	
+metadonnees_ref_no	metadonnees	ref	(reference)	(reference)	no	small	
+metadonnees_nom1_no	metadonnees	nom1	nom de variable = 1 caractere	metadonnees_ref_no	no	small	
+metadonnees_nom32_no	metadonnees	nom32	nom de variable = 32 caracteres	metadonnees_ref_no	no	small	
+metadonnees_lab_ascii_no	metadonnees	lab_ascii	label de variable ASCII court	metadonnees_ref_no	no	small	
+metadonnees_lab256_no	metadonnees	lab256	label de variable = 256 caracteres	metadonnees_ref_no	no	small	
+metadonnees_lab_utf8_no	metadonnees	lab_utf8	label de variable non ASCII	metadonnees_ref_no	no	small	
+metadonnees_tablabel_no	metadonnees	tablabel	label de table	metadonnees_ref_no	no	small	
+metadonnees_fmt_date9_no	metadonnees	fmt_date9	format de variable = date9.	metadonnees_ref_no	no	small	
+metadonnees_infmt_date9_no	metadonnees	infmt_date9	informat de variable = date9.	metadonnees_ref_no	no	small	
+metadonnees_fmt_datetime19_no	metadonnees	fmt_datetime19	format de variable = datetime19.	metadonnees_ref_no	no	small	
+metadonnees_infmt_datetime19_no	metadonnees	infmt_datetime19	informat de variable = datetime19.	metadonnees_ref_no	no	small	
+metadonnees_fmt_time8_no	metadonnees	fmt_time8	format de variable = time8.	metadonnees_ref_no	no	small	
+metadonnees_infmt_time8_no	metadonnees	infmt_time8	informat de variable = time8.	metadonnees_ref_no	no	small	
+metadonnees_fmt_dollar12_2_no	metadonnees	fmt_dollar12_2	format de variable = dollar12.2	metadonnees_ref_no	no	small	
+metadonnees_fmt_best12_no	metadonnees	fmt_best12	format de variable = best12.	metadonnees_ref_no	no	small	
+metadonnees_fmt_comma10_2_no	metadonnees	fmt_comma10_2	format de variable = comma10.2	metadonnees_ref_no	no	small	
+metadonnees_infmt_comma10_2_no	metadonnees	infmt_comma10_2	informat de variable = comma10.2	metadonnees_ref_no	no	small	
+metadonnees_fmt_percent8_1_no	metadonnees	fmt_percent8_1	format de variable = percent8.1	metadonnees_ref_no	no	small	
+metadonnees_fmt_e10_no	metadonnees	fmt_e10	format de variable = e10.	metadonnees_ref_no	no	small	
+metadonnees_fmt_char20_no	metadonnees	fmt_char20	format de variable = $char20.	metadonnees_ref_no	no	small	
+metadonnees_infmt_char20_no	metadonnees	infmt_char20	informat de variable = $char20.	metadonnees_ref_no	no	small	
+taille_n50000_no	taille	n50000	nombre de lignes = 50000 (plusieurs pages)	base_n3000_mix_no	no	small	
+taille_buf4096_no	taille	buf4096	taille de page (BUFSIZE) = 4096	taille_buf65536_no	no	small	
+taille_buf8192_no	taille	buf8192	taille de page (BUFSIZE) = 8192	taille_buf65536_no	no	small	
+taille_buf65536_no	taille	buf65536	taille de page (BUFSIZE) = 65536	(reference)	no	small	
+taille_buf131072_no	taille	buf131072	taille de page (BUFSIZE) = 131072	taille_buf65536_no	no	small	
+taille_wide300_no	taille	wide300	nombre de colonnes numeriques = 300	(reference)	no	small	
+taille_wide5000_no	taille	wide5000	nombre de colonnes numeriques = 5000	(reference : wide300)	no	small	5000 colonnes : doit depasser la capacite d'un sous-en-tete de noms
+encodage_utf8_no	encodage	utf8	encodage = utf-8	(reference)	no	small	
+encodage_latin1_no	encodage	latin1	encodage = latin1	encodage_utf8_no	no	small	
+encodage_wlatin1_no	encodage	wlatin1	encodage = wlatin1	encodage_utf8_no	no	small	
+plateforme_linux_x86_64_no	plateforme	linux_x86_64	representation des donnees (OUTREP) = LINUX_X86_64	(reference)	no	small	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+plateforme_linux_32_no	plateforme	linux_32	representation des donnees (OUTREP) = LINUX_32	plateforme_linux_x86_64_no	no	small	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+plateforme_windows_32_no	plateforme	windows_32	representation des donnees (OUTREP) = WINDOWS_32	plateforme_linux_x86_64_no	no	small	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+plateforme_windows_64_no	plateforme	windows_64	representation des donnees (OUTREP) = WINDOWS_64	plateforme_linux_x86_64_no	no	small	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+plateforme_solaris_64_no	plateforme	solaris_64	representation des donnees (OUTREP) = SOLARIS_64	plateforme_linux_x86_64_no	no	small	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+plateforme_hp_ux_32_no	plateforme	hp_ux_32	representation des donnees (OUTREP) = HP_UX_32	plateforme_linux_x86_64_no	no	small	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+plateforme_aix_64_no	plateforme	aix_64	representation des donnees (OUTREP) = RS_6000_AIX_64	plateforme_linux_x86_64_no	no	small	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+compression_blank200_no	compression	blank200	(reference NO) ligne = 3 caracteres + 197 blancs	(reference)	no	small	
+compression_pat2_no	compression	pat2	(reference NO) motif de 2 octets repete	(reference)	no	small	
+compression_pat4_no	compression	pat4	(reference NO) motif de 4 octets repete	(reference)	no	small	
+compression_pat7_no	compression	pat7	(reference NO) motif de 7 octets repete	(reference)	no	small	
+compression_zeros_no	compression	zeros	(reference NO) 20 colonnes numeriques a zero	(reference)	no	small	
+compression_noise_no	compression	noise	(reference NO) 20 lignes de 200 caracteres pseudo-aleatoires (peu compressibles)	(reference)	no	small	
+compression_runs_no	compression	runs	(reference NO) suites d'un meme octet de longueur 2 a 500 (octets 78 40 00 FF 20) suivies de END	(reference)	no	small	les octets non imprimables sont ecrits dans le CSV tels que stockes (voir fichier .csv)
+base_n0_mix_char	base	n0_mix	compression = CHAR (reference : meme table en NO)	base_n0_mix_no	char	full	
+base_n0_mix_binary	base	n0_mix	compression = BINARY (reference : meme table en NO)	base_n0_mix_no	binary	full	
+base_n1_mix_char	base	n1_mix	compression = CHAR (reference : meme table en NO)	base_n1_mix_no	char	full	
+base_n1_mix_binary	base	n1_mix	compression = BINARY (reference : meme table en NO)	base_n1_mix_no	binary	full	
+base_n2_mix_char	base	n2_mix	compression = CHAR (reference : meme table en NO)	base_n2_mix_no	char	full	
+base_n2_mix_binary	base	n2_mix	compression = BINARY (reference : meme table en NO)	base_n2_mix_no	binary	full	
+base_n100_mix_char	base	n100_mix	compression = CHAR (reference : meme table en NO)	base_n100_mix_no	char	full	
+base_n100_mix_binary	base	n100_mix	compression = BINARY (reference : meme table en NO)	base_n100_mix_no	binary	full	
+base_n3000_mix_char	base	n3000_mix	compression = CHAR (reference : meme table en NO)	base_n3000_mix_no	char	full	
+base_n3000_mix_binary	base	n3000_mix	compression = BINARY (reference : meme table en NO)	base_n3000_mix_no	binary	full	
+base_n100_num_char	base	n100_num	compression = CHAR (reference : meme table en NO)	base_n100_num_no	char	full	
+base_n100_num_binary	base	n100_num	compression = BINARY (reference : meme table en NO)	base_n100_num_no	binary	full	
+base_n100_chr_char	base	n100_chr	compression = CHAR (reference : meme table en NO)	base_n100_chr_no	char	full	
+base_n100_chr_binary	base	n100_chr	compression = BINARY (reference : meme table en NO)	base_n100_chr_no	binary	full	
+types_num3_char	types	num3	compression = CHAR (reference : meme table en NO)	types_num3_no	char	full	
+types_num3_binary	types	num3	compression = BINARY (reference : meme table en NO)	types_num3_no	binary	full	
+types_num4_char	types	num4	compression = CHAR (reference : meme table en NO)	types_num4_no	char	full	
+types_num4_binary	types	num4	compression = BINARY (reference : meme table en NO)	types_num4_no	binary	full	
+types_num5_char	types	num5	compression = CHAR (reference : meme table en NO)	types_num5_no	char	full	
+types_num5_binary	types	num5	compression = BINARY (reference : meme table en NO)	types_num5_no	binary	full	
+types_num6_char	types	num6	compression = CHAR (reference : meme table en NO)	types_num6_no	char	full	
+types_num6_binary	types	num6	compression = BINARY (reference : meme table en NO)	types_num6_no	binary	full	
+types_num7_char	types	num7	compression = CHAR (reference : meme table en NO)	types_num7_no	char	full	
+types_num7_binary	types	num7	compression = BINARY (reference : meme table en NO)	types_num7_no	binary	full	
+types_num8_char	types	num8	compression = CHAR (reference : meme table en NO)	types_num8_no	char	full	
+types_num8_binary	types	num8	compression = BINARY (reference : meme table en NO)	types_num8_no	binary	full	
+types_char1_char	types	char1	compression = CHAR (reference : meme table en NO)	types_char1_no	char	full	
+types_char1_binary	types	char1	compression = BINARY (reference : meme table en NO)	types_char1_no	binary	full	
+types_char8_char	types	char8	compression = CHAR (reference : meme table en NO)	types_char8_no	char	full	
+types_char8_binary	types	char8	compression = BINARY (reference : meme table en NO)	types_char8_no	binary	full	
+types_char200_char	types	char200	compression = CHAR (reference : meme table en NO)	types_char200_no	char	full	
+types_char200_binary	types	char200	compression = BINARY (reference : meme table en NO)	types_char200_no	binary	full	
+types_char32767_char	types	char32767	compression = CHAR (reference : meme table en NO)	types_char32767_no	char	full	
+types_char32767_binary	types	char32767	compression = BINARY (reference : meme table en NO)	types_char32767_no	binary	full	
+valeurs_manquants_char	valeurs	manquants	compression = CHAR (reference : meme table en NO)	valeurs_manquants_no	char	full	infinis et NaN : SAS ne sait pas en produire (aucune syntaxe), non generes
+valeurs_manquants_binary	valeurs	manquants	compression = BINARY (reference : meme table en NO)	valeurs_manquants_no	binary	full	infinis et NaN : SAS ne sait pas en produire (aucune syntaxe), non generes
+valeurs_extremes_char	valeurs	extremes	compression = CHAR (reference : meme table en NO)	valeurs_extremes_no	char	full	
+valeurs_extremes_binary	valeurs	extremes	compression = BINARY (reference : meme table en NO)	valeurs_extremes_no	binary	full	
+valeurs_chaines_char	valeurs	chaines	compression = CHAR (reference : meme table en NO)	valeurs_chaines_no	char	full	
+valeurs_chaines_binary	valeurs	chaines	compression = BINARY (reference : meme table en NO)	valeurs_chaines_no	binary	full	
+metadonnees_ref_char	metadonnees	ref	compression = CHAR (reference : meme table en NO)	metadonnees_ref_no	char	full	
+metadonnees_ref_binary	metadonnees	ref	compression = BINARY (reference : meme table en NO)	metadonnees_ref_no	binary	full	
+metadonnees_nom1_char	metadonnees	nom1	compression = CHAR (reference : meme table en NO)	metadonnees_nom1_no	char	full	
+metadonnees_nom1_binary	metadonnees	nom1	compression = BINARY (reference : meme table en NO)	metadonnees_nom1_no	binary	full	
+metadonnees_nom32_char	metadonnees	nom32	compression = CHAR (reference : meme table en NO)	metadonnees_nom32_no	char	full	
+metadonnees_nom32_binary	metadonnees	nom32	compression = BINARY (reference : meme table en NO)	metadonnees_nom32_no	binary	full	
+metadonnees_lab_ascii_char	metadonnees	lab_ascii	compression = CHAR (reference : meme table en NO)	metadonnees_lab_ascii_no	char	full	
+metadonnees_lab_ascii_binary	metadonnees	lab_ascii	compression = BINARY (reference : meme table en NO)	metadonnees_lab_ascii_no	binary	full	
+metadonnees_lab256_char	metadonnees	lab256	compression = CHAR (reference : meme table en NO)	metadonnees_lab256_no	char	full	
+metadonnees_lab256_binary	metadonnees	lab256	compression = BINARY (reference : meme table en NO)	metadonnees_lab256_no	binary	full	
+metadonnees_lab_utf8_char	metadonnees	lab_utf8	compression = CHAR (reference : meme table en NO)	metadonnees_lab_utf8_no	char	full	
+metadonnees_lab_utf8_binary	metadonnees	lab_utf8	compression = BINARY (reference : meme table en NO)	metadonnees_lab_utf8_no	binary	full	
+metadonnees_tablabel_char	metadonnees	tablabel	compression = CHAR (reference : meme table en NO)	metadonnees_tablabel_no	char	full	
+metadonnees_tablabel_binary	metadonnees	tablabel	compression = BINARY (reference : meme table en NO)	metadonnees_tablabel_no	binary	full	
+metadonnees_fmt_date9_char	metadonnees	fmt_date9	compression = CHAR (reference : meme table en NO)	metadonnees_fmt_date9_no	char	full	
+metadonnees_fmt_date9_binary	metadonnees	fmt_date9	compression = BINARY (reference : meme table en NO)	metadonnees_fmt_date9_no	binary	full	
+metadonnees_infmt_date9_char	metadonnees	infmt_date9	compression = CHAR (reference : meme table en NO)	metadonnees_infmt_date9_no	char	full	
+metadonnees_infmt_date9_binary	metadonnees	infmt_date9	compression = BINARY (reference : meme table en NO)	metadonnees_infmt_date9_no	binary	full	
+metadonnees_fmt_datetime19_char	metadonnees	fmt_datetime19	compression = CHAR (reference : meme table en NO)	metadonnees_fmt_datetime19_no	char	full	
+metadonnees_fmt_time8_char	metadonnees	fmt_time8	compression = CHAR (reference : meme table en NO)	metadonnees_fmt_time8_no	char	full	
+metadonnees_fmt_time8_binary	metadonnees	fmt_time8	compression = BINARY (reference : meme table en NO)	metadonnees_fmt_time8_no	binary	full	
+metadonnees_infmt_time8_char	metadonnees	infmt_time8	compression = CHAR (reference : meme table en NO)	metadonnees_infmt_time8_no	char	full	
+metadonnees_infmt_time8_binary	metadonnees	infmt_time8	compression = BINARY (reference : meme table en NO)	metadonnees_infmt_time8_no	binary	full	
+metadonnees_fmt_dollar12_2_char	metadonnees	fmt_dollar12_2	compression = CHAR (reference : meme table en NO)	metadonnees_fmt_dollar12_2_no	char	full	
+metadonnees_fmt_best12_char	metadonnees	fmt_best12	compression = CHAR (reference : meme table en NO)	metadonnees_fmt_best12_no	char	full	
+metadonnees_fmt_best12_binary	metadonnees	fmt_best12	compression = BINARY (reference : meme table en NO)	metadonnees_fmt_best12_no	binary	full	
+metadonnees_fmt_comma10_2_char	metadonnees	fmt_comma10_2	compression = CHAR (reference : meme table en NO)	metadonnees_fmt_comma10_2_no	char	full	
+metadonnees_fmt_comma10_2_binary	metadonnees	fmt_comma10_2	compression = BINARY (reference : meme table en NO)	metadonnees_fmt_comma10_2_no	binary	full	
+metadonnees_infmt_comma10_2_char	metadonnees	infmt_comma10_2	compression = CHAR (reference : meme table en NO)	metadonnees_infmt_comma10_2_no	char	full	
+metadonnees_fmt_percent8_1_char	metadonnees	fmt_percent8_1	compression = CHAR (reference : meme table en NO)	metadonnees_fmt_percent8_1_no	char	full	
+metadonnees_fmt_e10_char	metadonnees	fmt_e10	compression = CHAR (reference : meme table en NO)	metadonnees_fmt_e10_no	char	full	
+metadonnees_fmt_e10_binary	metadonnees	fmt_e10	compression = BINARY (reference : meme table en NO)	metadonnees_fmt_e10_no	binary	full	
+metadonnees_fmt_char20_char	metadonnees	fmt_char20	compression = CHAR (reference : meme table en NO)	metadonnees_fmt_char20_no	char	full	
+metadonnees_fmt_char20_binary	metadonnees	fmt_char20	compression = BINARY (reference : meme table en NO)	metadonnees_fmt_char20_no	binary	full	
+metadonnees_infmt_char20_char	metadonnees	infmt_char20	compression = CHAR (reference : meme table en NO)	metadonnees_infmt_char20_no	char	full	
+metadonnees_infmt_char20_binary	metadonnees	infmt_char20	compression = BINARY (reference : meme table en NO)	metadonnees_infmt_char20_no	binary	full	
+taille_n50000_char	taille	n50000	compression = CHAR (reference : meme table en NO)	taille_n50000_no	char	full	
+taille_n50000_binary	taille	n50000	compression = BINARY (reference : meme table en NO)	taille_n50000_no	binary	full	
+taille_buf4096_char	taille	buf4096	compression = CHAR (reference : meme table en NO)	taille_buf4096_no	char	full	
+taille_buf4096_binary	taille	buf4096	compression = BINARY (reference : meme table en NO)	taille_buf4096_no	binary	full	
+taille_buf8192_char	taille	buf8192	compression = CHAR (reference : meme table en NO)	taille_buf8192_no	char	full	
+taille_buf8192_binary	taille	buf8192	compression = BINARY (reference : meme table en NO)	taille_buf8192_no	binary	full	
+taille_buf65536_char	taille	buf65536	compression = CHAR (reference : meme table en NO)	taille_buf65536_no	char	full	
+taille_buf65536_binary	taille	buf65536	compression = BINARY (reference : meme table en NO)	taille_buf65536_no	binary	full	
+taille_buf131072_char	taille	buf131072	compression = CHAR (reference : meme table en NO)	taille_buf131072_no	char	full	
+taille_buf131072_binary	taille	buf131072	compression = BINARY (reference : meme table en NO)	taille_buf131072_no	binary	full	
+taille_wide300_char	taille	wide300	compression = CHAR (reference : meme table en NO)	taille_wide300_no	char	full	
+taille_wide300_binary	taille	wide300	compression = BINARY (reference : meme table en NO)	taille_wide300_no	binary	full	
+taille_wide5000_char	taille	wide5000	compression = CHAR (reference : meme table en NO)	taille_wide5000_no	char	full	5000 colonnes : doit depasser la capacite d'un sous-en-tete de noms
+taille_wide5000_binary	taille	wide5000	compression = BINARY (reference : meme table en NO)	taille_wide5000_no	binary	full	5000 colonnes : doit depasser la capacite d'un sous-en-tete de noms
+encodage_utf8_char	encodage	utf8	compression = CHAR (reference : meme table en NO)	encodage_utf8_no	char	full	
+encodage_utf8_binary	encodage	utf8	compression = BINARY (reference : meme table en NO)	encodage_utf8_no	binary	full	
+encodage_latin1_char	encodage	latin1	compression = CHAR (reference : meme table en NO)	encodage_latin1_no	char	full	
+encodage_latin1_binary	encodage	latin1	compression = BINARY (reference : meme table en NO)	encodage_latin1_no	binary	full	
+encodage_wlatin1_char	encodage	wlatin1	compression = CHAR (reference : meme table en NO)	encodage_wlatin1_no	char	full	
+encodage_wlatin1_binary	encodage	wlatin1	compression = BINARY (reference : meme table en NO)	encodage_wlatin1_no	binary	full	
+plateforme_linux_x86_64_char	plateforme	linux_x86_64	compression = CHAR (reference : meme table en NO)	plateforme_linux_x86_64_no	char	full	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+plateforme_linux_x86_64_binary	plateforme	linux_x86_64	compression = BINARY (reference : meme table en NO)	plateforme_linux_x86_64_no	binary	full	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+plateforme_linux_32_char	plateforme	linux_32	compression = CHAR (reference : meme table en NO)	plateforme_linux_32_no	char	full	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+plateforme_linux_32_binary	plateforme	linux_32	compression = BINARY (reference : meme table en NO)	plateforme_linux_32_no	binary	full	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+plateforme_windows_32_char	plateforme	windows_32	compression = CHAR (reference : meme table en NO)	plateforme_windows_32_no	char	full	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+plateforme_windows_32_binary	plateforme	windows_32	compression = BINARY (reference : meme table en NO)	plateforme_windows_32_no	binary	full	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+plateforme_windows_64_char	plateforme	windows_64	compression = CHAR (reference : meme table en NO)	plateforme_windows_64_no	char	full	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+plateforme_windows_64_binary	plateforme	windows_64	compression = BINARY (reference : meme table en NO)	plateforme_windows_64_no	binary	full	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+plateforme_solaris_64_char	plateforme	solaris_64	compression = CHAR (reference : meme table en NO)	plateforme_solaris_64_no	char	full	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+plateforme_solaris_64_binary	plateforme	solaris_64	compression = BINARY (reference : meme table en NO)	plateforme_solaris_64_no	binary	full	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+plateforme_hp_ux_32_char	plateforme	hp_ux_32	compression = CHAR (reference : meme table en NO)	plateforme_hp_ux_32_no	char	full	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+plateforme_hp_ux_32_binary	plateforme	hp_ux_32	compression = BINARY (reference : meme table en NO)	plateforme_hp_ux_32_no	binary	full	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+plateforme_aix_64_char	plateforme	aix_64	compression = CHAR (reference : meme table en NO)	plateforme_aix_64_no	char	full	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+plateforme_aix_64_binary	plateforme	aix_64	compression = BINARY (reference : meme table en NO)	plateforme_aix_64_no	binary	full	fichier ecrit par SAS avec OUTREP= (representation emulee, pas produit sur l'OS d'origine)
+compression_blank200_char	compression	blank200	compression = CHAR (reference : meme table en NO)	compression_blank200_no	char	full	
+compression_blank200_binary	compression	blank200	compression = BINARY (reference : meme table en NO)	compression_blank200_no	binary	full	
+compression_pat2_char	compression	pat2	compression = CHAR (reference : meme table en NO)	compression_pat2_no	char	full	
+compression_pat2_binary	compression	pat2	compression = BINARY (reference : meme table en NO)	compression_pat2_no	binary	full	
+compression_pat4_char	compression	pat4	compression = CHAR (reference : meme table en NO)	compression_pat4_no	char	full	
+compression_pat4_binary	compression	pat4	compression = BINARY (reference : meme table en NO)	compression_pat4_no	binary	full	
+compression_pat7_char	compression	pat7	compression = CHAR (reference : meme table en NO)	compression_pat7_no	char	full	
+compression_pat7_binary	compression	pat7	compression = BINARY (reference : meme table en NO)	compression_pat7_no	binary	full	
+compression_zeros_char	compression	zeros	compression = CHAR (reference : meme table en NO)	compression_zeros_no	char	full	
+compression_zeros_binary	compression	zeros	compression = BINARY (reference : meme table en NO)	compression_zeros_no	binary	full	
+compression_noise_char	compression	noise	compression = CHAR (reference : meme table en NO)	compression_noise_no	char	full	
+compression_noise_binary	compression	noise	compression = BINARY (reference : meme table en NO)	compression_noise_no	binary	full	
+compression_runs_char	compression	runs	compression = CHAR (reference : meme table en NO)	compression_runs_no	char	full	les octets non imprimables sont ecrits dans le CSV tels que stockes (voir fichier .csv)
+compression_runs_binary	compression	runs	compression = BINARY (reference : meme table en NO)	compression_runs_no	binary	full	les octets non imprimables sont ecrits dans le CSV tels que stockes (voir fichier .csv)
+suppression_n100_del10_no	suppression	n100_del10	lignes supprimees (10 sur 100)	base_n100_mix_no	no	full	MODIFY ... REMOVE ; absent de sas_small (BRIDGE FAILURE sasyoix/sase7yd)
+suppression_n100_del10_char	suppression	n100_del10	lignes supprimees (10 sur 100)	base_n100_mix_no	char	full	MODIFY ... REMOVE ; absent de sas_small (BRIDGE FAILURE sasyoix/sase7yd)
+suppression_n100_del10_binary	suppression	n100_del10	lignes supprimees (10 sur 100)	base_n100_mix_no	binary	full	MODIFY ... REMOVE ; absent de sas_small (BRIDGE FAILURE sasyoix/sase7yd)
+index_n100_ix_no	index	n100_ix	index simple sur i	base_n100_mix_no	no	full	PROC DATASETS INDEX CREATE ; produit aussi un .sas7bndx
+catalogue_fmtuser_no	catalogue	fmtuser	format utilisateur (PROC FORMAT) lie a une colonne	base_n100_mix_no	no	full	produit aussi formats.sas7bcat et un CNTLOUT
+encodage_sjis_no	encodage	sjis	encodage = shift-jis	encodage_utf8_no	no	full	
