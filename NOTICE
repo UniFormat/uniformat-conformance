@@ -1,0 +1,9 @@
+UniFormat conformance data: third-party files
+
+The files under data/external are copied unmodified from the projects below and keep their own licenses. Per-file
+origin, commit and license are listed in data/external/EXTERNAL.tsv; the license texts are next to the files.
+
+- datareader (https://github.com/kshedden/datareader) - BSD-3-Clause - data/external/datareader/LICENSE_datareader
+- pandas (https://github.com/pandas-dev/pandas) - BSD-3-Clause - data/external/pandas/LICENSE_pandas
+- pyreadstat (https://github.com/Roche/pyreadstat) - Apache-2.0 (ReadStat embedded: MIT) - data/external/pyreadstat/LICENSE_pyreadstat
+- ReadStat (https://github.com/WizardMac/ReadStat) - MIT - data/external/readstat/LICENSE_readstat
