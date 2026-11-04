@@ -35,3 +35,11 @@ driver, pandas, pyreadstat, Parso and the reference reader, and compares bytes w
 arguments it also rewrites `sas/tools/write_matrix_driver.md`; with case names it does not. Environment: `VENV_PYTHON`
 (pandas and pyreadstat; pandas 3.1 rejects 0-row compressed tables, use 2.3.x), `PARSO_CP`, `UNIFORMAT_OUT`. The optional
 SAS oracle suite (`validate_write.py`) needs Docker and a licensed SAS.
+
+## Mandatory security tests and optional corpus
+
+The driver repositories generate their security fixtures in private temporary directories supplied by `uniformat-testkit`. These tests run without SAS and without an external corpus. Keep them in the default test suite.
+
+Tests that require the independent SAS corpus are explicitly `#[ignore]`. Run them with `UNIFORMAT_CORPUS=/trusted/corpus cargo test --locked -- --ignored`; `Corpus::require_from_env()` fails if the corpus is missing or empty. A missing corpus must never be counted as successful conformance coverage. Existing fixtures and their independently obtained reference values are still needed to check real SAS compatibility.
+
+The validation driver creates a private unpredictable output directory by default. `UNIFORMAT_OUT` is an explicit override for a trusted output directory. Rust dependency locks are tracked, and `cargo deny --locked --all-features check advisories` includes test dependencies.

@@ -47,6 +47,21 @@ impl Corpus {
         root.is_dir().then_some(Self { root })
     }
 
+    /// Corpus obligatoire pour une suite de conformité explicitement demandée.
+    ///
+    /// # Panics
+    /// La variable est absente, le dossier manque ou ne contient aucun fichier SAS.
+    #[must_use]
+    pub fn require_from_env() -> Self {
+        let corpus =
+            Self::from_env().expect("UNIFORMAT_CORPUS doit désigner un corpus SAS existant");
+        assert!(
+            !corpus.files().expect("lecture du corpus").is_empty(),
+            "le corpus SAS est vide"
+        );
+        corpus
+    }
+
     /// Corpus ouvert depuis un dossier explicite.
     pub fn open(root: impl Into<PathBuf>) -> Self {
         Self { root: root.into() }

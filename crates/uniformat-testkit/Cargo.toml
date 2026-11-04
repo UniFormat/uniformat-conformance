@@ -9,6 +9,7 @@ repository.workspace = true
 publish = false
 
 [dependencies]
+tempfile = "3.27"
 
 [lints]
 workspace = true

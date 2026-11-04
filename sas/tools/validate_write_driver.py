@@ -10,6 +10,7 @@ SAS (oracle `sas_small`) n'est pas exécuté ici : suite optionnelle, colonne «
 import os
 import shutil
 import sys
+import tempfile
 import warnings
 import zlib
 
@@ -22,7 +23,9 @@ import uniformat_io.sas as S  # noqa: E402
 import validate_write as V  # noqa: E402
 import write_cases  # noqa: E402
 
-OUT = os.environ.get("UNIFORMAT_OUT", "/tmp/sas7bdat_write_driver")
+# Keep generated artifacts for inspection, in a private unpredictable directory by default.
+# An explicit UNIFORMAT_OUT is a user-selected trusted output directory.
+OUT = os.environ.get("UNIFORMAT_OUT") or tempfile.mkdtemp(prefix="uniformat-write-driver-")
 CREATED = 1_762_000_000.0  # secondes Unix fixes : le fichier du driver et celui de ref_writer ont le même en-tête
 READERS = ["driver", "pandas", "pyreadstat", "Parso", "ref_reader"]
 ENCODINGS = {20: "utf-8", 29: "latin1", 62: "wlatin1"}

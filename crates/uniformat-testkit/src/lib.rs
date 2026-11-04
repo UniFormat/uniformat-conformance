@@ -4,6 +4,9 @@
 //! les tests s'activent par `UNIFORMAT_CORPUS=<dossier corpus>` et se sautent sinon.
 #![forbid(unsafe_code)]
 
+/// Répertoires de test privés, uniques et supprimés à la fin de chaque test.
+pub use tempfile::{tempdir, TempDir};
+
 pub mod compare;
 pub mod corpus;
 pub mod csv;
